@@ -1,0 +1,12 @@
+jobs:
+  - name: first_test_job
+    type: manifest
+    steps:
+      - GET e2e-busybox-image
+      - PUT busybox1
+      
+  - name: second_test_job
+    type: manifest
+    steps:
+      - GET busybox1
+      - PUT busybox2
