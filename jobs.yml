@@ -9,4 +9,4 @@ jobs:
     type: manifest
     steps:
       - GET busybox1
-      #- PUT busybox2
+      - PUT busybox2
